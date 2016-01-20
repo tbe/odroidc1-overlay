@@ -20,6 +20,19 @@ mkdir /usr/local/portage
 git clone git://github.com/tbe/odroidc1-overlay.git /usr/local/portage
 echo 'PORTDIR_OVERLAY="${PORTDIR_OVERLAY} /usr/local/portage/"' >> /etc/portage/make.conf
 ```
+
+Usage with Layman
+-----------------
+```
+emerge -av layman dev-vcs/git
+pico /etc/layman/layman.cfg
+|   overlays  :
+|       https://api.gentoo.org/overlays/repositories.xml
+| +     https://github.com/tbe/odroidc1-overlay/raw/master/repositories.xml
+layman -S
+layman -a odroidc1
+```
+
 Usage with Paludis
 ------------------
 
