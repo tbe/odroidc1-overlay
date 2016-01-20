@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "http://www.gentoo.org/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>odroidc1</name>
+    <description lang="en">
+      Ebuilds for ODROID C1 nano computers.
+    </description>
+    <homepage>https://github.com/tbe/odroidc1-overlay</homepage>
+    <owner type="person">
+      <name>tbe</name>
+      <email>loki@lokis-chaos.de</email>
+    </owner>
+    <source type="git">git://github.com/tbe/odroidc1-overlay.git</source>
+    <feed></feed>
+  </repo>
+</repositories>
